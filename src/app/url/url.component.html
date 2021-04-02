@@ -1,0 +1,8 @@
+<div class="input-field">
+<input class="url"  type="text" [(ngModel)]="url" placeholder="Url : https://www.youtube.com/watch?v=wMBUtcMLJlk"> 
+<input class="btn-search" type="button" (click)="search()" value="Search">
+</div>
+
+<div *ngFor="let item of retuenValue | async ">
+    {{item |json}}
+</div>
